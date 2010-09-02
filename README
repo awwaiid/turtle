@@ -1,0 +1,11 @@
+Turtley Goodness
+
+Goal: Some of the fun stuff from Logo's turtle graphics and C64 sprite
+animation, all wrapped up into a lovely easy-to-run bundle.
+
+If you actually get this working, then try:
+
+  sub square { for(1..4) { forward 50 ; right 90 } }
+  for (1..36) { square ; right 10 }
+
+
