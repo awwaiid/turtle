@@ -46,6 +46,8 @@ class Turtle {
   }
 
   method jumpto( $new_x, $new_y ) {
+    $new_x = $new_x % 640;
+    $new_y = $new_y % 480;
     if($self->pen_down) {
       $self->app->draw_line(
         [$self->x, $self->y] => [$new_x, $new_y],

@@ -1,0 +1,13 @@
+# Draw a square of size N
+sub square { my ($n) = @_; for (1..4) { forward $n ; right 90 } }
+
+# Red square-spiral to black... twice
+for my $c (1..73) { square 100 ; right 5 ; $t->color([(512/73)*$c % 255, 0, 0]) }
+
+# Colorful square-spiral
+for my $c (1..360) {
+  square 100;
+  right 1;
+  $t->color([((255*32)/30)*$c % 255, ((255*16)/360)*$c % 255, (255/360)*$c % 255])
+}
+
